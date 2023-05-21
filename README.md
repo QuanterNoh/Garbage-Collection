@@ -12,7 +12,7 @@
 Python에서 GC는 참조 횟수 확인 방식과 세대별 가비지 컬렉션의 2 가지 방식으로 동작합니다.
 
 1. 참조 횟수 확인(Reference counting)
-: 특정 객체를 변수에 할당하거나 함수의 인수로 전달할때, list 혹은 class instance에서 속성으로 추가하는 등 data structure에 추가할 때 참조 횟수가 증가하게 되는데, 이후 특정 객체의 참조 횟수가 0이 되었을 때 GC가 자동적으로 객체의 메모리 할당을 해제합니다.
+    - 특정 객체를 변수에 할당하거나 함수의 인수로 전달할때, list 혹은 class 에 속성으로 추가하는 등 data structure에 추가할 때 참조 횟수가 증가하게 되는데, 이후 특정 객체의 참조 횟수가 0이 되었을 때 GC가 자동적으로 객체의 메모리 할당을 해제합니다.
 
 2. 세대별 가비지 컬렉션(Generational Garbage Collection)
     - Python의 GC는 세대(generation)와 임계값(threshold)에 따라 GC 주기와 객체를 관리합니다. 
