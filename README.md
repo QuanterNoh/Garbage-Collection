@@ -35,4 +35,9 @@ Python에서 GC는 참조 횟수 확인 방식과 세대별 가비지 컬렉션�
 4. 코드 검사
     - memory_profiler 라이브러리를 사용하여 메모리의 사용량을 측정합니다.
     - 코드 라인별로 메모리 사용량을 사전에 파악하여 불필요한 참조를 최소화하고, 메모리 leak을 방지합니다.
-    ``` from memory_profiler import profile
+    ``` 
+    from memory_profiler import profile
+    
+    @profile
+    def my_func():
+        ...
